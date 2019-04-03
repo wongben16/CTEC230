@@ -62,6 +62,10 @@ void createList(nodeType*& first, nodeType*& last)
 
 void printList(nodeType*& first)
 {
+	int total = 0;
+	int counter = 0;
+	
+
 
 	cout << "Inside printList...printing linked list...\n" << endl;
 	nodeType* current;
@@ -70,8 +74,12 @@ void printList(nodeType*& first)
 	while (current != NULL)
 	{
 		cout << current->info << endl;
+		total += current->info;
 		current = current->link;
+		counter++;
 	}
+	double avg = total / counter;
+	cout << "The average is: " << avg << endl;
 }
 
 
