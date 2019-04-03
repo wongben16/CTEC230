@@ -1,6 +1,5 @@
 #include <iostream>
 
-/////////////////////////////////////////asd;ofnafv////////////////////
 using namespace std;
 struct nodeType
 {
