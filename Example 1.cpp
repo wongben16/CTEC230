@@ -20,11 +20,11 @@ int main()
 	createList(first, last);
 	printList(first);
 	
-	cin<<"enter a number to insert first"<<endl;
+	num = cin<<"enter a number to insert first"<<endl;
 	insertFront(first, num); //dont know what to put into the () check with professor
 	printList(first);
 
-	cin << "enter number to insert last"<<endl;
+	num = cin << "enter number to insert last"<<endl;
 	insertBack(last, num);
 	printList(first);
 
