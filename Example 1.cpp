@@ -20,16 +20,18 @@ int main()
 	createList(first, last);
 	printList(first);
 	
-	insertFront(); //dont know what to put into the () check with professor
+	cin<<"enter a number to insert first"<<endl;
+	insertFront(first, num); //dont know what to put into the () check with professor
 	printList(first);
 
-	insertBack();
+	cin << "enter number to insert last"<<endl;
+	insertBack(last, num);
 	printList(first);
 
-	deleteFront();
+	deleteFront(first);
 	printList(first);
 
-	deleteBack();
+	deleteBack(first, last);
 	printList(first);
 
 	system("PAUSE");
@@ -93,9 +95,9 @@ void printList(nodeType*& first)
 	cout << "The average is: " << avg << endl;
 }
 
-void insertFront(nodeType*& first) {
+void insertFront(nodeType*& first, int a) {
 	nodeType* newNode = new nodeType;
-	int num;
+	int num = a;
 	
 	newNode->info = num;
 	newNode->link = first;
@@ -103,9 +105,9 @@ void insertFront(nodeType*& first) {
 
 }
 
-void insertBack(nodeType*& last) {
+void insertBack(nodeType*& last, int a) {
 	nodeType* newNode = new nodeType;
-	int num;
+	int num = a;
 
 	newNode->info = num;
 	newNode->link = NULL;
