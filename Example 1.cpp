@@ -16,10 +16,21 @@ int main()
 	nodeType* first, * last;
 	int num;
 
+	cout << "Lab2 part 2 testing the new functions..." << endl;
 	createList(first, last);
 	printList(first);
+	
+	insertFront(); //dont know what to put into the () check with professor
+	printList(first);
 
+	insertBack();
+	printList(first);
 
+	deleteFront();
+	printList(first);
+
+	deleteBack();
+	printList(first);
 
 	system("PAUSE");
 	return 0;
@@ -80,6 +91,57 @@ void printList(nodeType*& first)
 	}
 	double avg = total / counter;
 	cout << "The average is: " << avg << endl;
+}
+
+void insertFront(nodeType*& first) {
+	nodeType* newNode = new nodeType;
+	int num;
+	
+	newNode->info = num;
+	newNode->link = first;
+	first = newNode;
+
+}
+
+void insertBack(nodeType*& last) {
+	nodeType* newNode = new nodeType;
+	int num;
+
+	newNode->info = num;
+	newNode->link = NULL;
+	last = newNode;
+
+}
+
+void deleteFront(nodeType*& first) {
+	nodeType* temp;
+	temp = first;
+	first = first->link;
+	delete temp;
+}
+
+void deleteBack(nodeType*& last, nodeType*& first) {
+	nodeType* current;
+	current = new nodeType;
+	current = first;
+
+	nodeType* temp = new nodeType;
+	while (current != NULL) //to find the last node and second to last node
+	{
+		cout << current->info << endl;
+		current = current->link;
+		if (current->link->link == NULL) { //this finds second to last node
+			temp = current;
+		}
+		else {
+		}
+	}
+
+	delete current; //deletes the last node
+	temp = last; //makes second to last node to now become the last node
+
+
+
 }
 
 
