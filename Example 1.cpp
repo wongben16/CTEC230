@@ -19,17 +19,19 @@ int main()
 	cout << "Lab2 part 2 testing the new functions..." << endl;
 	createList(first, last);
 	printList(first);
-	
-	insertFront(); //dont know what to put into the () check with professor
+
+	cin >> num;
+	insertFront(first, num); //dont know what to put into the () check with professor
 	printList(first);
 
-	insertBack();
+	cin >> num;
+	insertBack(last, num);
 	printList(first);
 
-	deleteFront();
+	deleteFront(first);
 	printList(first);
 
-	deleteBack();
+	deleteBack(first, last);
 	printList(first);
 
 	system("PAUSE");
@@ -93,7 +95,7 @@ void printList(nodeType*& first)
 	cout << "The average is: " << avg << endl;
 }
 
-void insertFront(nodeType*& first) {
+void insertFront(nodeType*& first, int num) {
 	nodeType* newNode = new nodeType;
 	int num;
 	
@@ -103,7 +105,7 @@ void insertFront(nodeType*& first) {
 
 }
 
-void insertBack(nodeType*& last) {
+void insertBack(nodeType*& last, int a) {
 	nodeType* newNode = new nodeType;
 	int num;
 

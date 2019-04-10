@@ -1,3 +1,6 @@
 ﻿  Example 1.cpp
-C:\Users\Ben\source\repos\LinkedList example\Example 1.cpp(17): warning C4101: 'num': unreferenced local variable
-  LinkedList example.vcxproj -> C:\Users\Ben\source\repos\LinkedList example\Debug\LinkedList example.exe
+C:\Users\Ben\source\repos\LinkedList example\Example 1.cpp(24): error C3861: 'insertFront': identifier not found
+C:\Users\Ben\source\repos\LinkedList example\Example 1.cpp(28): error C3861: 'insertBack': identifier not found
+C:\Users\Ben\source\repos\LinkedList example\Example 1.cpp(31): error C3861: 'deleteFront': identifier not found
+C:\Users\Ben\source\repos\LinkedList example\Example 1.cpp(34): error C3861: 'deleteBack': identifier not found
+C:\Users\Ben\source\repos\LinkedList example\Example 1.cpp(100): error C2082: redefinition of formal parameter 'num'
